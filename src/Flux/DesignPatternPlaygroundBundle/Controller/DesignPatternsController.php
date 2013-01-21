@@ -3,7 +3,7 @@
 namespace Flux\DesignPatternPlaygroundBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Flux\DesignPatternPlaygroundBundle\Entity\Duck;
+use Flux\DesignPatternPlaygroundBundle\Entity\Strategy\Duck;
 
 class DesignPatternsController extends Controller
 {
