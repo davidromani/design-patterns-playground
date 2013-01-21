@@ -23,33 +23,6 @@ body {
     line-height: 1.4;
 }
 
-@font-face {
-    font-family: 'GothamRnd';
-    src: url('/fonts/otf/gothamrndmedium.otf');
-    src: url('/fonts/ttf/gothamrndmedium.ttf') format('truetype'),
-         url('/fonts/svg/gothamrndmedium.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GothamBook';
-    src: url('/fonts/otf/gothamrndbook.otf');
-    src: url('/fonts/ttf/gothamrndbook.ttf') format('truetype'),
-         url('/fonts/svg/gothamrndbook.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GothamLight';
-    src: url('/fonts/otf/gothamrndlight.otf');
-    src: url('/fonts/ttf/gothamrndlight.ttf') format('truetype'),
-         url('/fonts/svg/gothamrndlight.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection declarations have to be separate.
@@ -130,26 +103,13 @@ div.constrictor {
  * HEADER
  */
 header {
-    font-family: 'GothamRnd', arial, helvetica;
-    margin-bottom: 60px;
-    height: 186px;
-    /*
-    background: url('/images/points940.png') 0 0 no-repeat; //ENABLE TO FIX
-    */
     width: 100%;
     top: 0;
     background: #FFF;
 }
 
-header div.constrictor.clearfix h6 {
-    margin: 0 0 3px 0;
-    background: url('/images/points940.png') 0 0 no-repeat;
-    height: 5px;
-}
-
-header div.constrictor.clearfix h1.invisible {
-    font-size: 0.5em;
-    margin: 0;
+header div.constrictor.clearfix h1 {
+    border-bottom: dashed 1px #666;
 }
 
 header div.constrictor.clearfix h2 {
@@ -222,11 +182,7 @@ header div.constrictor.clearfix ul li.current a {
  * MAIN
  */
 div#principal {
-    font-family: 'GothamRnd', arial, helvetica;
-    min-height: 400px;
-    /*
-    margin-top: 300px; //ENABLE TO FIX
-    */
+    min-height: 200px;
 }
 
 div#principal div.constrictor.clearfix div.bloc {
@@ -658,11 +614,8 @@ div#principal div.constrictor.clearfix div.blog-panel-derecho a:hover {
 }
 
 footer {
-    font-family: 'GothamBook', arial, helvetica;
     color: #000;
-    font-size: 0.65em;
     padding-bottom: 40px;
-    margin-top: 60px;
 }
 
 footer div.constrictor.clearfix {
@@ -670,9 +623,8 @@ footer div.constrictor.clearfix {
 }
 
 footer div.constrictor.clearfix h6 {
-    margin: 0 0 3px 0;
-    background: url('/images/points940.png') 0 0 no-repeat;
-    height: 2px;
+    margin: 10px 0;
+    border-top: dashed 1px #666;
 }
 
 footer div.constrictor.clearfix div {
