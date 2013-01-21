@@ -1,3 +1,3 @@
 flux_design_pattern_playground_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: FluxDesignPatternPlaygroundBundle:Default:index }
+    pattern:  /design-patterns/strategy/
+    defaults: { _controller: FluxDesignPatternPlaygroundBundle:DesignPatterns:strategy }
