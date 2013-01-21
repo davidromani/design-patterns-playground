@@ -17,8 +17,20 @@
 
 {% block principal %}
     <div class="constrictor clearfix">
-        <h4>{{ duck }}</h4>
-        <h5>{{ duck.performFly() }}</h5>
-        <h5>{{ duck.performQuack() }}</h5>
+        <h4>{{ duck1 }}</h4>
+        <h5>
+            {{ duck1.performFly }}<br />
+            {{ duck1.performQuack }}
+        </h5>
+        <h4>{{ duck2 }}</h4>
+        <h5>
+            {{ duck2.performFly }}<br />
+            {{ duck2.performQuack }}
+        </h5>
+        <h4>Change quack behaviour at runtime</h4>
+        <h5>
+            {{ duck3.performFly }}<br />
+            {{ duck3.performQuack }}
+        </h5>
     </div>
 {% endblock %}
