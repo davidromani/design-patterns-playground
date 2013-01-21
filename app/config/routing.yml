@@ -1,3 +1,7 @@
+flux_design_pattern_playground:
+    resource: "@FluxDesignPatternPlaygroundBundle/Resources/config/routing.yml"
+    prefix:   /
+
 # Internal routing configuration to handle ESI
 # ****** WARNING ******
 # This route should be enabled with caution as it can open a security vulnerability
