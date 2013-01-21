@@ -1,3 +1,7 @@
-flux_design_pattern_playground_homepage:
+flux_design_pattern_playground_strategy:
     pattern:  /design-patterns/strategy/
     defaults: { _controller: FluxDesignPatternPlaygroundBundle:DesignPatterns:strategy }
+
+flux_design_pattern_playground_observer:
+    pattern:  /design-patterns/observer/
+    defaults: { _controller: FluxDesignPatternPlaygroundBundle:DesignPatterns:observer }

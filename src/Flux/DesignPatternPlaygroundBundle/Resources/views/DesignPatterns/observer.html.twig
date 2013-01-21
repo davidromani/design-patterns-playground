@@ -1,0 +1,21 @@
+{% extends 'FluxDesignPatternPlaygroundBundle:Global:layout.html.twig' %}
+
+{% block titulo %}
+    {% trans %}observer{% endtrans %}
+{% endblock %}
+
+{% block description %}
+    {% trans %}description.observer{% endtrans %}
+{% endblock %}
+
+{% block recursos %}
+{% endblock %}
+
+{% block menu %}
+    {{ knp_menu_render('FluxDesignPatternPlaygroundBundle:Builder:mainMenu') }}
+{% endblock %}
+
+{% block principal %}
+    <div class="constrictor clearfix">
+    </div>
+{% endblock %}

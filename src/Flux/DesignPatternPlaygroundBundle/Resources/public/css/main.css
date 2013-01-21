@@ -109,7 +109,7 @@ header {
 }
 
 header div.constrictor.clearfix h1 {
-    border-bottom: dashed 1px #666;
+    margin: 5px 0 0 0;
 }
 
 header div.constrictor.clearfix h2 {
@@ -132,15 +132,15 @@ header div.constrictor.clearfix a img {
 }
 
 header div.constrictor.clearfix ul {
-    /*border-top: dotted 2px #000;
-    border-bottom: dotted 2px #000;*/
     background: url('/images/points940.png') 0 100% no-repeat;
-    margin: 3px 0 0 0;
+    margin: 5px 0;
     padding: 0;
     list-style-type: none;
     float: left;
     display: block;
     width: 100%;
+    border-bottom: dashed 1px #666;
+    border-top: dashed 1px #666;
 }
 
 header div.constrictor.clearfix ul:last-child {
