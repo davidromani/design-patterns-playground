@@ -1,4 +1,4 @@
-{% extends 'FluxDesigPatternsPlaygroundBundle:Global:layout.html.twig' %}
+{% extends 'FluxDesignPatternPlaygroundBundle:Global:layout.html.twig' %}
 
 {% block titulo %}
     {% trans %}strategy{% endtrans %}
@@ -12,7 +12,7 @@
 {% endblock %}
 
 {% block menu %}
-    {{ knp_menu_render('PageBundle:Builder:main_' ~ app.request.locale ~ '_Menu') }}
+    {# knp_menu_render('PageBundle:Builder:main_' ~ app.request.locale ~ '_Menu') #}
 {% endblock %}
 
 {% block principal %}

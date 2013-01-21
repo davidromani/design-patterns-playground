@@ -1,0 +1,922 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+@font-face {
+    font-family: 'GothamRnd';
+    src: url('/fonts/otf/gothamrndmedium.otf');
+    src: url('/fonts/ttf/gothamrndmedium.ttf') format('truetype'),
+         url('/fonts/svg/gothamrndmedium.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamBook';
+    src: url('/fonts/otf/gothamrndbook.otf');
+    src: url('/fonts/ttf/gothamrndbook.ttf') format('truetype'),
+         url('/fonts/svg/gothamrndbook.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamLight';
+    src: url('/fonts/otf/gothamrndlight.otf');
+    src: url('/fonts/ttf/gothamrndlight.ttf') format('truetype'),
+         url('/fonts/svg/gothamrndlight.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+div.constrictor {
+    width: 814px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+/**
+ * HEADER
+ */
+header {
+    font-family: 'GothamRnd', arial, helvetica;
+    margin-bottom: 60px;
+    height: 186px;
+    /*
+    background: url('/images/points940.png') 0 0 no-repeat; //ENABLE TO FIX
+    */
+    width: 100%;
+    top: 0;
+    background: #FFF;
+}
+
+header div.constrictor.clearfix h6 {
+    margin: 0 0 3px 0;
+    background: url('/images/points940.png') 0 0 no-repeat;
+    height: 5px;
+}
+
+header div.constrictor.clearfix h1.invisible {
+    font-size: 0.5em;
+    margin: 0;
+}
+
+header div.constrictor.clearfix h2 {
+    float: right;
+    margin-top: 60px;
+    font-size: 1.3em;
+    cursor: none;
+    transition: color 0.75s;
+    -moz-transition: color 0.75s;
+    -webkit-transition: color 0.75s;
+    -o-transition: color 0.75s;
+}
+
+header div.constrictor.clearfix h2:hover {
+    color: #D84359;
+}
+
+header div.constrictor.clearfix a img {
+    margin-bottom: 16px;
+}
+
+header div.constrictor.clearfix ul {
+    /*border-top: dotted 2px #000;
+    border-bottom: dotted 2px #000;*/
+    background: url('/images/points940.png') 0 100% no-repeat;
+    margin: 3px 0 0 0;
+    padding: 0;
+    list-style-type: none;
+    float: left;
+    display: block;
+    width: 100%;
+}
+
+header div.constrictor.clearfix ul:last-child {
+    /*border-bottom: dotted 2px #000;*/
+}
+
+header div.constrictor.clearfix ul.level2 {
+    font-family: 'GothamBook', arial, helvetica;
+    margin-top: 2px;
+}
+
+header div.constrictor.clearfix ul li {
+    float: left;
+    font-size: 0.85em;
+    text-align: left;
+}
+
+header div.constrictor.clearfix ul li a {
+    color: #000;
+    text-decoration: none;
+    padding: 3px 0;
+    margin-right: 15px;
+    display: block;
+    transition: color 0.75s;
+    -moz-transition: color 0.75s;
+    -webkit-transition: color 0.75s;
+    -o-transition: color 0.75s;
+}
+
+header div.constrictor.clearfix ul li a:hover {
+    color: #D84359;
+}
+
+header div.constrictor.clearfix ul li.current a {
+    color: #D84359;
+}
+
+/**
+ * MAIN
+ */
+div#principal {
+    font-family: 'GothamRnd', arial, helvetica;
+    min-height: 400px;
+    /*
+    margin-top: 300px; //ENABLE TO FIX
+    */
+}
+
+div#principal div.constrictor.clearfix div.bloc {
+    float: left;
+    margin: 10px 10px 10px 0;
+    padding: 15px;
+    width: 65%;
+    color: #FFF;
+}
+
+div#principal div.constrictor.clearfix div.bloc.verd {
+    background: #91BF6E;
+}
+
+div#principal div.constrictor.clearfix div.bloc.vermell {
+    background: #D84359;
+}
+
+div#principal div.constrictor.clearfix div.bloc:last-child {
+    margin-right: 0;
+}
+
+div#principal div.constrictor.clearfix div.home-panel-izquierdo {
+    float: left;
+    width: 460px;
+}
+
+div#principal div.constrictor.clearfix div.home-panel-derecho {
+    float: right;
+    width: 340px;
+}
+
+div#principal div.constrictor.clearfix div.home-panel-derecho a img {
+    margin-bottom: 20px;
+}
+
+div#principal div.constrictor.clearfix div.home-panel-derecho a img.resalte {
+    transition: opacity 0.35s;
+    -moz-transition: opacity 0.35s;
+    -webkit-transition: opacity 0.35s;
+    -o-transition: opacity 0.35s;
+}
+
+div#principal div.constrictor.clearfix div.home-panel-derecho a img.resalte:hover {
+    opacity: 0.75;
+}
+
+div#principal div.constrictor.clearfix div.conjunt-items-armari div.file-block {
+    float: left;
+    margin-bottom: 60px;
+}
+
+div#principal div.constrictor.clearfix div.conjunt-items-armari div.file-block:last-child {
+    margin-bottom: 0;
+}
+
+div#principal div.constrictor.clearfix div.conjunt-items-armari div.file-block div.one-item-block {
+    float: left;
+    margin-right: 17px;
+    font-size: 0.85em;
+    font-family: 'GothamBook', arial, helvetica;
+}
+
+div#principal div.constrictor.clearfix div.conjunt-items-armari div.file-block div.one-item-block:last-child {
+    margin-right: 0;
+}
+
+div#principal div.constrictor.clearfix div.conjunt-items-armari div.file-block div.one-item-block a img {
+    transition: opacity 0.35s;
+    -moz-transition: opacity 0.35s;
+    -webkit-transition: opacity 0.35s;
+    -o-transition: opacity 0.35s;
+}
+
+div#principal div.constrictor.clearfix div.conjunt-items-armari div.file-block div.one-item-block a img:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+div#principal div.constrictor.clearfix div.conjunt-items-armari div.file-block div.one-item-block div.one-item-foot {
+    padding: 6px 0;
+    margin-top: 15px;
+    /*border-bottom: 2px black dotted;
+    border-top: 2px black dotted;*/
+    background: url('/images/points470.png') 0 0 no-repeat;
+    height: 17px;
+}
+
+div#principal div.constrictor.clearfix div.conjunt-items-armari div.file-block div.one-item-block div.one-item-foot h6 {
+    margin: 0 0 12px 0;
+    background: url('/images/points470.png') 0 100% no-repeat;
+    height: 22px;
+}
+
+div#principal div.constrictor.clearfix div.detall-item-armari-esquerra {
+    float: left;
+    width: 530px;
+}
+
+div#principal div.constrictor.clearfix div.detall-item-armari-esquerra img#fix-it {
+    margin-top: -47px;
+    position: relative;
+    z-index: -1;
+}
+
+div#principal div.constrictor.clearfix div.detall-item-armari-esquerra div.detall-item-armari-esquerra-botonera {
+    padding: 10px;
+    float: left;
+    width: 510px;
+    height: 27px;
+}
+
+div#principal div.constrictor.clearfix div.detall-item-armari-esquerra div.detall-item-armari-esquerra-botonera a {
+    text-decoration: none;
+    color: #000;
+}
+
+div#principal div.constrictor.clearfix div.detall-item-armari-esquerra div.detall-item-armari-esquerra-botonera a.esquerra {
+    float: left;
+}
+
+div#principal div.constrictor.clearfix div.detall-item-armari-esquerra div.detall-item-armari-esquerra-botonera a.dreta {
+    float: right;
+}
+
+div#principal div.constrictor.clearfix div.detall-item-armari-esquerra div.detall-item-armari-esquerra-botonera a:hover {
+    color: #D84359;
+}
+
+div#principal div.constrictor.clearfix div.botiga-item-armari-esquerra {
+    background: url('/images/points940.png') 0 0 no-repeat;
+    width: 550px;
+    float: left;
+}
+
+div#principal div.constrictor.clearfix div.botiga-item-armari-esquerra h3 {
+    background: url('/images/points940.png') 0 100% no-repeat;
+    padding: 2px 0 3px 0;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    font-size: 0.85em;
+    font-weight: normal;
+    color: #D84359;
+}
+
+div#principal div.constrictor.clearfix div.botiga-item-armari-esquerra table {
+    width: 100%;
+    background: url('/images/points940.png') 0 100% no-repeat;
+    border-collapse: collapse;
+    font-size: 0.85em;
+    font-family: 'GothamBook', arial, helvetica;
+}
+
+div#principal div.constrictor.clearfix div.botiga-item-armari-esquerra table thead {
+    text-align: left;
+    background: url('/images/points940.png') 0 100% no-repeat;
+}
+
+div#principal div.constrictor.clearfix div.botiga-item-armari-esquerra table thead tr th {
+    /*border-bottom: 2px dotted #000;*/
+    font-weight: normal;
+    padding: 3px 0;
+}
+
+div#principal div.constrictor.clearfix div.botiga-item-armari-esquerra table tbody tr td {
+    padding: 10px 0;
+    background: url('/images/points940.png') 0 100% no-repeat;
+}
+
+div#principal div.constrictor.clearfix div.botiga-item-armari-esquerra table tbody tr td a {
+    text-decoration: none;
+    color: #000;
+}
+
+div#principal div.constrictor.clearfix div.botiga-item-armari-esquerra table tbody tr td a:hover {
+    color: #D84359;
+}
+
+div#principal div.constrictor.clearfix div.botiga-item-armari-esquerra table tfoot tr th {
+    text-align: right;
+    font-weight: normal;
+    padding: 4px 0 3px 0;
+}
+
+div#principal div.constrictor.clearfix div.botiga-item-armari-esquerra table tfoot tr.final th {
+    background: url('/images/points940.png') 0 0 no-repeat;
+}
+
+div#principal div.constrictor.clearfix div.botiga-item-armari-esquerra table.formulari tbody tr th {
+    padding: 2px 0;
+    text-align: left;
+    font-weight: normal;
+    font-family: 'GothamBook', arial, helvetica;
+}
+
+div#principal div.constrictor.clearfix div.botiga-item-armari-esquerra table.formulari tbody tr td {
+    padding: 2px 0;
+    background: none;
+    font-weight: normal;
+    font-family: 'GothamBook', arial, helvetica;
+    /*background: url('/images/points940.png') 0 100% no-repeat;*/
+}
+
+div#principal div.constrictor.clearfix div.botiga-item-armari-esquerra table.formulari tbody tr td span.help-inline {
+    color: #D84359;
+}
+
+div#principal div.constrictor.clearfix div.botiga-item-armari-esquerra table.formulari tbody tr td input {
+    border: dotted 1px #000;
+    width: 346px;
+    height: 20px;
+}
+
+div#principal div.constrictor.clearfix div.botiga-item-armari-esquerra table.formulari tbody tr td textarea {
+    border: dotted 1px #000;
+    resize: none;
+    width: 344px;
+}
+
+div#principal div.constrictor.clearfix div.botiga-item-armari-esquerra input[type="submit"] {
+    padding: 5px 20px;
+    border-radius: 2px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: opacity 0.35s;
+    -moz-transition: opacity 0.35s;
+    -webkit-transition: opacity 0.35s;
+    -o-transition: opacity 0.35s;
+    text-align: center;
+    border: none;
+    background: #000;
+}
+
+div#principal div.constrictor.clearfix div.botiga-item-armari-esquerra input[type="submit"]:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+div#principal div.constrictor.clearfix div.detall-item-armari-dreta {
+    float: right;
+    width: 25%;
+    background: url('/images/points235.png') 0 0 no-repeat;
+}
+
+div#principal div.constrictor.clearfix div.detall-item-armari-dreta h2 {
+    background: url('/images/points235.png') 0 100% no-repeat;
+    padding: 2px 0 3px 0;
+    margin-top: 4px;
+    margin-bottom: 3px;
+    font-size: 0.85em;
+    font-weight: normal;
+}
+
+div#principal div.constrictor.clearfix div.detall-item-armari-dreta ol {
+    margin: 0;
+    padding: 0 0 0 18px;
+    font-size: 0.85em;
+    line-height: 1.25;
+}
+
+div#principal div.constrictor.clearfix div.detall-item-armari-dreta ol li {
+    padding: 3px 2px;
+    font-family: 'GothamBook', arial, helvetica;
+}
+
+div#principal div.constrictor.clearfix div.detall-item-armari-dreta ol li.current {
+    color: #D84359;
+}
+
+div#principal div.constrictor.clearfix div.detall-item-armari-dreta p {
+    font-family: 'GothamBook', arial, helvetica;
+    font-size: 0.85em;
+    line-height: 1.9em;
+}
+
+div#principal div.constrictor.clearfix div.taller-panel-izquierdo {
+    float: left;
+    width: 510px;
+    background: url('/images/points940.png') 0 0 no-repeat;
+}
+
+div#principal div.constrictor.clearfix div.taller-panel-izquierdo h2 {
+    margin-top: 3px;
+    padding: 3px 0;
+    font-size: 0.85em;
+    background: url('/images/points940.png') 0 100% no-repeat;
+    font-weight: normal;
+}
+
+div#principal div.constrictor.clearfix div.taller-panel-izquierdo p {
+    font-size: 0.85em;
+    font-family: 'GothamBook', arial, helvetica;
+}
+
+div#principal div.constrictor.clearfix div.taller-panel-izquierdo p a {
+    color: #D84359;
+}
+
+div#principal div.constrictor.clearfix div.taller-panel-izquierdo p a:visited {
+    color: #D84359;
+}
+
+div#principal div.constrictor.clearfix div.taller-panel-izquierdo p a:active {
+    color: #D84359;
+}
+
+div#principal div.constrictor.clearfix div.taller-panel-derecho {
+    float: right;
+    /*width: 30%;*/
+}
+
+div#principal div.constrictor.clearfix div.blog-panel-izquierdo {
+    float: left;
+    width: 550px;
+}
+
+div#principal div.constrictor.clearfix div.blog-panel-izquierdo div.pblock {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    padding-top: 15px;
+    margin-bottom: 40px;
+    background: url('/images/points940.png') 0 0 no-repeat;
+}
+
+div#principal div.constrictor.clearfix div.blog-panel-izquierdo div.pblock a {
+    text-decoration: none;
+}
+
+div#principal div.constrictor.clearfix div.blog-panel-izquierdo div.pblock a img {
+    transition: opacity 0.35s;
+    -moz-transition: opacity 0.35s;
+    -webkit-transition: opacity 0.35s;
+    -o-transition: opacity 0.35s;
+}
+
+div#principal div.constrictor.clearfix div.blog-panel-izquierdo div.pblock a img:hover {
+    opacity: 0.75;
+}
+
+div#principal div.constrictor.clearfix div.blog-panel-izquierdo div.pblock div.pblock-left {
+    width: 50%;
+    float: right;
+}
+
+div#principal div.constrictor.clearfix div.blog-panel-izquierdo div.pblock h3 {
+    font-size: 0.85em;
+    font-weight: normal;
+}
+
+div#principal div.constrictor.clearfix div.blog-panel-izquierdo div.pblock h4 {
+    font-size: 0.85em;
+    font-weight: normal;
+}
+
+div#principal div.constrictor.clearfix div.blog-panel-izquierdo div.pblock p {
+    font-family: 'GothamBook', arial, helvetica;
+    font-size: 0.85em;
+}
+
+div#principal div.constrictor.clearfix div.blog-panel-izquierdo div.pblock div.pblock-left h3 {
+    margin: 0;
+    padding-bottom: 10px;
+    color: #D84359;
+    font-size: 0.85em;
+    font-weight: normal;
+}
+
+div#principal div.constrictor.clearfix div.blog-panel-izquierdo div.pblock div.pblock-left h4 {
+    margin: 0;
+    padding-bottom: 10px;
+    color: #D84359;
+    font-size: 0.85em;
+    font-weight: normal;
+}
+
+div#principal div.constrictor.clearfix div.blog-panel-izquierdo div.pblock div.pblock-left p {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 0.85em;
+    font-family: 'GothamBook', arial, helvetica;
+}
+
+div#principal div.constrictor.clearfix div.blog-panel-izquierdo div.pagination span.current {
+    color: #000;
+}
+
+div#principal div.constrictor.clearfix div.blog-panel-izquierdo div.pagination a {
+    color: #AAA;
+    text-decoration: none;
+}
+
+div#principal div.constrictor.clearfix div.blog-panel-izquierdo div.pagination a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+div#principal div.constrictor.clearfix div.blog-panel-derecho {
+    float: right;
+    width: 25%;
+}
+
+div#principal div.constrictor.clearfix div.blog-panel-derecho div.vblock {
+    width: 100%;
+    float: left;
+    margin-bottom: 40px;
+}
+
+div#principal div.constrictor.clearfix div.blog-panel-derecho h2 {
+    background: url('/images/points235.png') 0 0 no-repeat;
+    margin: 0;
+    padding: 5px 0 5px 0;
+    color: #AAA;
+    font-size: 0.85em;
+    font-weight: normal;
+}
+
+div#principal div.constrictor.clearfix div.blog-panel-derecho a {
+    color: #AAA;
+    font-size: 0.85em;
+    margin: 0 0 5px 0;
+    text-decoration: none;
+    font-family: 'GothamBook', arial, helvetica;
+}
+
+div#principal div.constrictor.clearfix div.blog-panel-derecho a:hover {
+    color: #000;
+}
+
+footer {
+    font-family: 'GothamBook', arial, helvetica;
+    color: #000;
+    font-size: 0.65em;
+    padding-bottom: 40px;
+    margin-top: 60px;
+}
+
+footer div.constrictor.clearfix {
+
+}
+
+footer div.constrictor.clearfix h6 {
+    margin: 0 0 3px 0;
+    background: url('/images/points940.png') 0 0 no-repeat;
+    height: 2px;
+}
+
+footer div.constrictor.clearfix div {
+    float: left;
+    height: 170px;
+    margin-right: 60px; /*30px;*/
+    /*width: 100px;*/
+}
+
+footer div.constrictor.clearfix div span {
+    font-family: 'GothamRnd', arial, helvetica;
+}
+
+footer div.constrictor.clearfix div a {
+    color: #000;
+    text-decoration: none;
+}
+
+footer div.constrictor.clearfix div a:hover {
+    text-decoration: underline;
+}
+
+a.call-to-action {
+    padding: 5px 20px;
+    border-radius: 2px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: opacity 0.35s;
+    -moz-transition: opacity 0.35s;
+    -webkit-transition: opacity 0.35s;
+    -o-transition: opacity 0.35s;
+    text-align: center;
+    font-size: 0.85em;
+}
+
+a.call-to-action.red {
+    background: #D84359;
+}
+
+a.call-to-action.grey {
+    background: #999;
+}
+
+a.call-to-action.green {
+    background: #8BC06D;
+}
+
+a.call-to-action.black {
+    background: #000;
+}
+
+a.call-to-action:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
