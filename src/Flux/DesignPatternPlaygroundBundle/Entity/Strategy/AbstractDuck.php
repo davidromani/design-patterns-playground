@@ -16,7 +16,7 @@ abstract class AbstractDuck
         return $this->quackBehaviour->quack();
     }
 
-    public function __construct () {
+    public function __construct() {
         $this->name = 'Default duck name';
     }
 

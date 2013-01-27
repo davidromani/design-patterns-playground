@@ -3,9 +3,13 @@
 namespace Flux\DesignPatternPlaygroundBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+
 use Flux\DesignPatternPlaygroundBundle\Entity\Strategy\MallardDuck;
 use Flux\DesignPatternPlaygroundBundle\Entity\Strategy\ModelDuck;
 use Flux\DesignPatternPlaygroundBundle\Entity\Strategy\MuteQuack;
+
+use Flux\DesignPatternPlaygroundBundle\Entity\Observer\WeatherData;
+use Flux\DesignPatternPlaygroundBundle\Entity\Observer\CurrentConditionsDisplay;
 
 class DesignPatternsController extends Controller
 {
@@ -21,7 +25,9 @@ class DesignPatternsController extends Controller
 
     public function observerAction()
     {
-        return $this->render('FluxDesignPatternPlaygroundBundle:DesignPatterns:observer.html.twig');
+        $weatherData = new WeatherData();
+        $currentDisplay = new CurrentConditionsDisplay($weatherData);
+        return $this->render('FluxDesignPatternPlaygroundBundle:DesignPatterns:observer.html.twig', array('weatherData' => $weatherData, 'currentDisplay' => $currentDisplay));
     }
 
 }
