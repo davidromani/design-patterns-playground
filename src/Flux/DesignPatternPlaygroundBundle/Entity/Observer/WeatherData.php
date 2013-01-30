@@ -47,7 +47,7 @@ class WeatherData implements Subject
         self::measurementsChanged();
     }
 
-    public function setRandomMeasurements() {
+    public function updateRandomMeasurements() {
         $temp = rand(5, 35);
         $humidity = rand(15, 95);
         $pressure = rand(900, 1080);

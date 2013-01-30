@@ -27,7 +27,6 @@ class DesignPatternsController extends Controller
     {
         $weatherData = new WeatherData();
         $currentDisplay = new CurrentConditionsDisplay($weatherData);
-        $weatherData->setMeasurements(80, 65, 30.4);
         return $this->render('FluxDesignPatternPlaygroundBundle:DesignPatterns:observer.html.twig', array('weatherData' => $weatherData, 'currentDisplay' => $currentDisplay));
     }
 
