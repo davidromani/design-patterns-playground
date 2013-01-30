@@ -17,5 +17,11 @@
 
 {% block principal %}
     <div class="constrictor clearfix">
+        <h4>Subject (weather station) updated and observer (current display) registred</h4>
+        <h5>Display: {{ currentDisplay.display }}</h5>
+        <h4>Subject updated{{ weatherData.setRandomMeasurements }}</h4>
+        <h5>Display: {{ currentDisplay.display }}</h5>
+        <h4>Subject updated and observer unregistred{{ weatherData.removeObserver(currentDisplay) }}</h4>
+        <h5>Display: {{ currentDisplay.display }}</h5>
     </div>
 {% endblock %}

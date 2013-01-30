@@ -18,11 +18,11 @@ class CurrentConditionsDisplay implements Observer {
     public function update($temp, $humidity, $pressure) {
         $this->temp = $temp;
         $this->humidity = $humidity;
-        self::display();
+        //self::display();
     }
 
     public function display() {
-        return 'Current conditions: '.$this->temp.' degrees and '.$this->humidity.'% humidity';
+        return 'current conditions '.$this->temp.' degrees and '.$this->humidity.'% humidity';
     }
 
 }
